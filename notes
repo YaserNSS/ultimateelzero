@@ -1,0 +1,10 @@
+lec 4
+npm i gulp@3.9.1 -g
+npm init
+npm i gulp@3.9.1 --save-dev
+gulp -v
+touch gulpfile.js
+npm i gulp-concat gulp-sass gulp-autoprefixer gulp-pug gulp-livereload gulp-notify gulp-sourcemaps gulp-minify --save-dev
+npm i static-server
+create server.js
+lec 7
