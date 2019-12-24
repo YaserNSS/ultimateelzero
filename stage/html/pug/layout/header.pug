@@ -25,3 +25,33 @@
                         | You Got Email from Bal                                                                                                
             .noti-foot.text-center: a(href="#") View All Notifications 
     i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+    .dropdown.usermenu-container
+        .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.avatar.rounded-circle(src="imgs/boy.png",alt="")
+            span.user Yasir Mustafa
+            i.fa.fa-angle-down
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+            .user-info
+                h3 Yasir Mustafa
+                p Premium Member
+            hr 
+            ul.activities-list.list-unstyled
+                li Added Comment
+                li create post one category
+                li create chart page
+                li commment  dshsd
+            hr
+            .row.usermenu-links
+                .col
+                    .link-box 
+                        i.fa.fa-gear.fa-lg.fa-fw
+                        span Setting
+                .col
+                    .link-box 
+                        i.fa.fa-user.fa-lg.fa-fw
+                        span My Profile
+                .col
+                    .link-box 
+                        i.fa.fa-power-off.fa-lg.fa-fw
+                        span Logout
+                
