@@ -26,6 +26,18 @@ $(function(){
       $(this).parent().toggleClass('hide-settings');
     });
 
+    //swtich color theme 
+    var themesClasses = [];
+    $(".color-options li").each(function(){
+      themesClasses.push($(this).data('theme'));
+    });
+
+    $(".color-options li").on("click",function(){
+      $(this).addClass('active').siblings().removeClass('active');
+      $('body').removeClass(themesClasses.join(" "))
+      .addClass($(this).data('theme'));     
+    });
+
 });
 
 
